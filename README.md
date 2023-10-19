@@ -1,2 +1,0 @@
-# otimiza
-otimiza
