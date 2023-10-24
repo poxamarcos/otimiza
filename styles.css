@@ -69,7 +69,7 @@ header .navigation .navigation-items a:hover:before {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 50px;
+    padding: 0px 20px;
     margin-top: 100px;
 }
 
@@ -109,12 +109,13 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .button-comece {
-    background-color: #FFE100;
+    background-color: #890078;
     padding: 10px 50px;
     border-radius: 50px;
     margin: 0px 20px 0px 0px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
+    font-weight: 600;
 
     border: 2px solid #000;
     box-shadow: #000 -5px 3px;
@@ -151,7 +152,7 @@ header .navigation .navigation-items a:hover:before {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #FFE100;
+    background-color: #890078;
 }
 
 
@@ -184,7 +185,7 @@ header .navigation .navigation-items a:hover:before {
 .beneficio-card {
     width: 200px;
     height: 200px;
-    background-color: #FFE100;
+    background-color: #890078;
     border: 2px solid #000;
     box-shadow: #000 -5px 3px;
     border-radius: 10px;
@@ -291,12 +292,12 @@ header .navigation .navigation-items a:hover:before {
 
 .servicos-texto-top {
     text-align: center;
-    padding: 100px 25%;
+    padding: 80px 10%;
     margin-top: 100px;
 }
 
 .servicos-texto-top>h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 
@@ -311,7 +312,7 @@ header .navigation .navigation-items a:hover:before {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 
@@ -334,17 +335,25 @@ header .navigation .navigation-items a:hover:before {
 }
 
 
-.servicos-center-number>h1 {
-    display: block;
-    padding: 7px 34px;
+.servicos-circle-number {
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     background-color: #890078;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.servicos-circle-number>h1 {
     font-size: 3em;
+    font-weight: 800;
     color: #000;
 }
 
 .servicos-texto-principal>h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -361,7 +370,8 @@ header .navigation .navigation-items a:hover:before {
     border-radius: 10px;
     margin: 50px 0px 100px 0px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-weight: 600;
 }
 
 
@@ -413,7 +423,7 @@ header .navigation .navigation-items a:hover:before {
 
 
 .bonus-seta {
-    background-color: #00AA00;
+    background-color: #890078;
     padding: 5px 10px;
     border-radius: 50% 50%;
     margin-left: 5px;
@@ -426,6 +436,32 @@ header .navigation .navigation-items a:hover:before {
     color: #fff;
 }
 
+
+.bonus-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+.bonus-links>a {
+    color: #000;
+}
+
+
+.div-seta-bonus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: #890078;
+}
 
 @media (min-width: 501px) {
     .img-mobile {
@@ -615,4 +651,78 @@ header .navigation .navigation-items a:hover:before {
     }
 
 
+}
+
+
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    header>.navigation {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        transition: 0.5s ease;
+        background-color: #fff;
+        height: 10%;
+        z-index: 1;
+        position: fixed;
+    }
+
+    header>img {
+        max-width: 165px;
+        width: 165px;
+    }
+
+    header>svg {
+        display: block;
+    }
+
+
+    .home>.content {
+        text-align: left;
+    }
+
+    .home>.content>h1 {
+        font-size: 2em;
+        line-height: normal;
+    }
+
+
+
+    .button-center-row {
+        justify-content: center;
+    }
+
+    .beneficios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .beneficios-text {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .beneficios-horiz-card {
+        width: 40%;
+    }
+
+    .beneficios-redes {
+        justify-content: center;
+    }
+
+    .beneficios-text>h1 {
+        margin-top: 100px;
+    }
+
+
+    .beneficio-card {
+        margin-bottom: 30px;
+        width: 80%;
+    }
 }
