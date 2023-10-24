@@ -22,6 +22,7 @@ header {
     transition: 0.5s ease;
     background-color: #fff;
     height: 15%;
+
 }
 
 header>svg {
@@ -91,6 +92,13 @@ header .navigation .navigation-items a:hover:before {
     width: 75%;
     margin-bottom: 20px;
     color: #000000;
+  
+}
+
+.home .content>h1 > span{
+    color: #890078;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 
@@ -480,6 +488,7 @@ header .navigation .navigation-items a:hover:before {
         padding: 0px 20px;
         transition: 0.5s ease;
         background-color: #fff;
+        box-shadow: #00000011 5px 5px 7px;
         height: 10%;
         z-index: 1;
         position: fixed;
